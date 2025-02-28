@@ -1,0 +1,165 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup Form</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(90deg, #e2e2e2, #c9d6ff);
+        }
+
+        .container {
+            position: relative;
+            width: 400px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .container h1 {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        .input-box {
+            position: relative;
+            margin: 10px 0;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            padding-left: 40px;
+            outline: none;
+        }
+
+        .input-box i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: #4a90e2;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background: #4a90e2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #357ABD;
+        }
+
+        .toggle-btn {
+            font-size: 14px;
+            margin-top: 10px;
+            cursor: pointer;
+            color: #4a90e2;
+        }
+
+        .toggle-btn:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-icons i {
+            font-size: 24px;
+            color: #4a90e2;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .social-icons i:hover {
+            color: #357ABD;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div id="login-form">
+            <h1>Login</h1>
+            <div class="input-box">
+                <i class="bx bxs-user"></i>
+                <input type="text" placeholder="Username" required>
+            </div>
+            <div class="input-box">
+                <i class="bx bxs-lock"></i>
+                <input type="password" placeholder="Password" required>
+            </div>
+            <button class="btn">Login</button>
+            <p class="toggle-btn" onclick="toggleForms()">Don't have an account? Register</p>
+        </div>
+
+        <div id="register-form" class="hidden">
+            <h1>Register</h1>
+            <div class="input-box">
+                <i class="bx bxs-user"></i>
+                <input type="text" placeholder="Username" required>
+            </div>
+            <div class="input-box">
+                <i class="bx bxs-envelope"></i>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <i class="bx bxs-lock"></i>
+                <input type="password" placeholder="Password" required>
+            </div>
+            <button class="btn">Register</button>
+            <p class="toggle-btn" onclick="toggleForms()">Already have an account? Login</p>
+            <p style="margin-top: 10px;">or register with social platforms</p>
+            <div class="social-icons">
+                <i class="bx bxl-google"></i>
+                <i class="bx bxl-facebook"></i>
+                <i class="bx bxl-linkedin"></i>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleForms() {
+            document.getElementById('login-form').classList.toggle('hidden');
+            document.getElementById('register-form').classList.toggle('hidden');
+        }
+    </script>
+
+</body>
+</html>
