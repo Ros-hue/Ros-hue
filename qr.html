@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>www.WiFi Card Generator</title>
+  <link href="qr.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <marquee><h1>welcome!</h1></marquee>
+    <h1>WiFi Card Generator</h1>
+    <div class="form-container">
+        <input type="text" id="router" placeholder="Router Company Name"  required/>
+      <input type="text" id="ssid" placeholder="WiFi Name (SSID)"  required/>
+      <input type="password" id="password" placeholder="WiFi Password" required />
+      <select id="encryption">
+        <option value="WPA">WPA/WPA2</option>
+        <option value="WEP">WEP</option>
+        <option value="nopass">WPA personal</option>
+      </select><br>
+      <button onclick="generateCard()">Generate Card</button>
+    </div>
+    <div class="card" id="wifiCard">
+      <div id="qrcode"></div>
+      <div class="wifi-details">
+        <p id="ssidDisplay"></p>
+        <p id="passwordDisplay"></p>
+      </div>
+    </div>
+  </div>
+  <script src="qr1.js"></script>
+</body>
+</html>
