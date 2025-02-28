@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,16 +20,16 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background: linear-gradient(90deg, #e2e2e2, #c9d6ff);
+            background: linear-gradient(60deg, #f7aeae, #8ca1e9);
         }
 
         .container {
+            background: linear-gradient(90deg, #94f794, #14a7a7);
             position: relative;
             width: 400px;
-            background: #fff;
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 60px 50px rgba(20, 185, 214, 0.2);
             text-align: center;
         }
 
@@ -64,7 +65,7 @@
         .btn {
             width: 100%;
             padding: 12px;
-            background: #4a90e2;
+            background: #1376e7;
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -73,16 +74,15 @@
             transition: 0.3s;
             margin-top: 10px;
         }
-
         .btn:hover {
-            background: #357ABD;
+            background: #273644;
         }
 
         .toggle-btn {
             font-size: 14px;
             margin-top: 10px;
             cursor: pointer;
-            color: #4a90e2;
+            color: #0f72e2;
         }
 
         .toggle-btn:hover {
@@ -98,13 +98,13 @@
 
         .social-icons i {
             font-size: 24px;
-            color: #4a90e2;
+            color: #2682eb;
             cursor: pointer;
             transition: 0.3s;
         }
 
         .social-icons i:hover {
-            color: #357ABD;
+            color: #2e84db;
         }
 
         .hidden {
@@ -147,7 +147,7 @@
             <p class="toggle-btn" onclick="toggleForms()">Already have an account? Login</p>
             <p style="margin-top: 10px;">or register with social platforms</p>
             <div class="social-icons">
-                <i class="bx bxl-google"></i>
+                <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fgl%3DNP%26hl%3Den-US&ec=GAZAoQQ&followup=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fgl%3DNP%26hl%3Den-US&hl=en-US&ifkv=ASSHykoiRTbjhKcqAiWDtnTES4XP2vMIej18viulqTQ6oFo4M0VWQI-_utAPByju5c5CM1Tv915_Gw&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S992270737%3A1740738550792449&ddm=1" target="_blank"><i class="bx bxl-google"></i></a>
                 <i class="bx bxl-facebook"></i>
                 <i class="bx bxl-linkedin"></i>
             </div>
@@ -160,6 +160,5 @@
             document.getElementById('register-form').classList.toggle('hidden');
         }
     </script>
-
 </body>
 </html>
