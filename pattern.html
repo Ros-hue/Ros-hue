@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pattaern</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: #9b1313;
+            display: flex;
+            justify-content: center;
+            animation: bod 1s infinite  ease-in normal;
+        }
+
+        #containar {
+            background-color: rgb(18, 140, 240);
+            display: inline;
+            justify-content: center;
+            justify-items: center;
+            width: 500px;
+            height: 500px;
+            animation: cont 1s infinite ease-in ;
+        }
+        .shape{
+            margin-top: 45px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(117, 206, 117);
+            border-radius: 20%;
+            border: #1c07d4 solid 5px;
+            border-right-color: #d40707;
+            border-left-color: #cb06fc;
+            box-shadow: 0 0 100px rgb(201, 0, 241);
+            animation: box 1s infinite  ease-in normal;
+        }
+        @keyframes box {
+            10% {
+                background-color: rgb(6, 5, 99);
+            border-radius: 50%;
+            border: #1c07d4 solid 5px;
+            border-right-color: #d40707;
+            border-left-color: #06fc12;
+            box-shadow: 0 0 100px rgb(241, 217, 0);  
+        }
+        50%{
+            background-color: rgb(117, 206, 117);
+            border-radius: 25%;
+            border: #1c07d4 solid 5px;
+            border-right-color: #afafaf;
+            border-left-color: #cb06fc;
+            box-shadow: 0 0 100px rgb(201, 0, 241);
+            transform: rotate(360deg);
+        }
+    }
+      @keyframes cont {
+        10%{
+            background-color: rgb(255, 217, 0);
+            transform: scale(1.5);
+        
+        }
+      }
+      @keyframes bod {
+        10%{
+            background-color: rgb(119, 0, 255);
+            transform: rotate(360deg);
+            width: 500px;
+            height: 500px;
+        }
+      }
+    </style>
+       <div id="containar">
+         <div class="shape"></div>
+         <div class="shape"></div>
+          <div class="shape"></div>
+       </div>
+</body>
+</html>
