@@ -52,7 +52,7 @@
 
 ### 🐍 Contribution Snake (Animated)
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Ros-hue/Ros-hue/output/github-contribution-grid-snake.svg" alt="snake animation"/>
+  <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" alt="snake animation"/>
 </p>
 
 > To enable snake animation, run this link once: https://github.com/Platane/snk#readme  
