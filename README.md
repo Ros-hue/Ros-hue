@@ -3,7 +3,7 @@
   <img src="https://github.com/user-attachments/assets/6eefe104-0abc-484d-a1ff-4c3fc411ec83" width="400"/>
 </p>
 
-<h1 align="center">Hi 👋, I'm Roshan Yadav</h1>
+<h1 align="center">Hi 👋, I'm Yuvraj Yadav</h1>
 <h3 align="center">A Passionate Learner & Future Software Engineer 🚀</h3>
 
 ---
