@@ -1,6 +1,6 @@
 <!-- Banner -->
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/6eefe104-0abc-484d-a1ff-4c3fc411ec83" width="400"/>
+  <img src="https://github.com/Ros-hue/pics/blob/main/Programming%20Computer.gif?raw=true" width="400"/>
 </p>
 
 <h1 align="center">Hi 👋, I'm Yuvraj Yadav</h1>
