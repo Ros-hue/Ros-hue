@@ -1,4 +1,7 @@
 <!-- Banner -->
+<p>
+  <img src="https://github.com/Ros-hue/pics/blob/main/cc11c262-2f63-4a16-81b0-83d3013b3056.png?raw=true">
+</p>
 <p align="center">
   <img src="https://github.com/Ros-hue/pics/blob/main/Programming%20Computer.gif?raw=true" width="400"/>
    <img src="https://github.com/Ros-hue/pics/blob/main/hi.gif?raw=true" width="400"/>
